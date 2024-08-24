@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(120deg, antiquewhite, #ff7777);
+            height: 892px;
+        }
+
+        #hhh {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            color: #d14c4c;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #d14c4c;
+        }
+
+        
+        label {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #d14c4c;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: none;
+            border-radius: 10px;
+        }
+
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <h1 id="hhh">Login</h1>
+    <form>
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required minlength="8"><br><br>
+        <label for="lembrar-me">Lembrar-me:</label>
+        <input type="checkbox" id="lembrar-me" name="lembrar-me">
+        </form>
+
+</body>
+</html>
