@@ -26,7 +26,7 @@
             box-shadow: 0 0 10px #d14c4c;
         }
 
-        
+
         label {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             display: block;
@@ -41,11 +41,34 @@
         input[type="password"] {
             width: 96%;
             padding: 10px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             border: none;
             border-radius: 10px;
         }
 
+        input[type="checkbox"] {
+            cursor: pointer;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            width: 100%;
+            padding: 10px;
+            margin-top: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff7777;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #d14c4c;
+            transition: 400ms;
+        }
     </style>
     <title>Login</title>
 </head>
@@ -59,7 +82,8 @@
         <input type="password" id="senha" name="senha" required minlength="8"><br><br>
         <label for="lembrar-me">Lembrar-me:</label>
         <input type="checkbox" id="lembrar-me" name="lembrar-me">
-        </form>
-
+        <input type="submit" value="Login">
+    </form>
 </body>
+
 </html>

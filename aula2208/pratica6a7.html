@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomrulario de Cadastro Avançado</title>
+
+    <style>
+        body {
+            background: linear-gradient(120deg, antiquewhite, #ff7777);
+            height: 892px;
+        }
+
+        #hhh {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            color: #d14c4c;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #d14c4c;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        form>* {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        label {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #d14c4c;
+
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input[type="date"] {
+            width: 100%;
+            padding: 10px 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #arqbottom {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="hhh">Fomrulario Avançado</h1>
+    <form>
+        <label for="birthdate">Data de nascimento:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label for="gender">Gênero:</label>
+        <select id="gender" name="gender">
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label for="file" id="arqbottom">Upload de arquivo:</label>
+        <input type="file" name="arq" id="aqr">
+    </form>
+</body>
+
+</html>
