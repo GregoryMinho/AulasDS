@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro com Campos Avançados</title>
+
+    <style>
+        body {
+            background: linear-gradient(120deg, antiquewhite, #ff7777);
+            height: 892px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #d14c4c;
+        }
+
+        #hhh {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+            color: #d14c4c;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            width: 20%;
+            margin-right: 10px;
+        }
+
+        label {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #d14c4c;
+        }
+
+        input,
+        select {
+            width: 70%;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="hhh">Formulário de Cadastro Avançado</h1>
+    <form>
+        <label>Data de Nascimento:</label>
+        <input type="date" id="birth_date" name="birth_date"><br><br>
+        <label>Gênero:</label>
+        <select id="gender" name="gender">
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+        <label>Upload de Arquivo:</label>
+        <input type="file" id="file" name="file"><br><br>
+    </form>
+</body>
+
+</html>
